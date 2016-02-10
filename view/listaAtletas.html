@@ -1,0 +1,40 @@
+<div class="row">
+    <div class="col-md-12">
+     	<h2>Busca de Atletas</h2>
+    </div>
+</div>
+<hr />
+<div>
+	<form method="post" accept-charset="utf-8">
+		  	<input type="text" class="form-control" ng-model="criterioDeBusca" placeholder="O que está buscando?" aria-describedby="basic-addon1"><br>
+	</form>
+</div>
+<div>
+    <table class="table table-striped">
+    		<tr>
+    			<th></th>
+    			<th><a href="" ng-click="ordenarPorNome('nome')">Nome</a></th>
+    			<th>Categoria</th>
+    			<th>Registro da Academia</th>
+    			<th>Estudante</th>
+    			<th>Ultimo Exame</th>
+    			<th>Apto</th>
+    			<th>Ultima Pesagem</th>
+    			<th></th>
+    		</tr>
+    		<tr ng-repeat="atleta in atletas | filter:criterioDeBusca | limitTo:10 | orderBy:'criterioDeOrdenacao':direcaoDaOrdenacao ">
+    			<td></td>
+    			<td>{{atleta.nome | uppercase | limitTo:20 }}</td>
+    			<td>{{atleta.categoria}}</td>
+    			<td>{{atleta.registro}}</td>
+    			<td>{{atleta.estudante}}</td>
+    			<td>{{atleta.exame}}</td>
+    			<td>{{atleta.apto}}</td>
+    			<td>{{atleta.pesagem}}</td>
+    			<td><div class="btn btn-danger square-btn-adjust" ng-click="detalheAtleta('{{atleta.id}}')">Detalhes</div></td>
+    		</tr>
+    </table>
+</div>
+ <hr />
+	<button class="btn btn-primary btn-block" ng-click="adicionarAtleta()">Adicionar Atleta</button>
+ </div>

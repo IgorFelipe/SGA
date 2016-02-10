@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html ng-app="GereciamentoAtletas">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Sistema de Gerenciamento de Atletas</title>
+	<link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" href="lib/bootstrap/css/bootstrap-theme.css">
+	<link rel="stylesheet" href="css/home.css">
+	<link href="css/font-awesome.css" rel="stylesheet" />	
+	<script src="lib/angular/angular.js"></script>
+	<script src="lib/angular/angular-route.js"></script>
+	<script src="lib/ng-file-upload-master/dist/ng-file-upload.js"></script>
+	<script src="lib/ng-file-upload-master/dist/ng-file-upload-shim.js"></script>
+	<script src="js/app.js"></script>
+	<script src="js/controllers/AtletasCtrl.js"></script>
+	<script src="js/controllers/NovoAtletaCtrl.js"></script>
+	<script src="js/controllers/DetalhesAtletaCtrl.js"></script>
+	<script src="js/directives/fileModel.js"></script>
+	<script src="js/services/fileUpload.js"></script>
+	<script src="js/config/routerConfig.js"></script>
+
+	<script src="lib/jQuery/jquery.js"></script>
+	<script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+	<script src="lib/bootstrap/js/bootstrap.js"></script>
+
+</head>
+<body>
+<div id="wrapper">
+		<div ng-include="'view/cabecalho.html'">
+		</div>
+        <div id="page-wrapper" >
+            <div id="page-inner" ng-view>
+            </div>
+        </div>
+</div>
+</body>
+</html>

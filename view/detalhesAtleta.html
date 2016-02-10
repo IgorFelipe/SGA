@@ -1,0 +1,459 @@
+<!--
+/*------------------------------------------------------------------------------------------------------------------
+  View de Detalhamento de Atletas para o Sistema de Gerenciamento de Atletas Inicialmente feito para o Projeto J146
+  View Feita por Igor Felipe
+  Desenvolvido em AngularJs e Bootstrap
+  Data de Criação 06/01/2016
+  Direitos Totais para os Devidos Créditos
+  ------------------------------------------------------------------------------------------------------------------*/
+-->
+<!--
+/*------------------------------------------------------------------------------------------------------------
+  Cabecalho da Pagina Contendo seu Titulo
+  ----------------------------------------------------------------------------------------------------------*/
+-->
+ <div class="row">
+    <div class="col-md-12">
+     	<h2>Detalhes do Atleta</h2>
+    </div>
+ </div>
+ <hr>
+<!--
+/*------------------------------------------------------------------------------------------------------------
+  Informações do Atleta Sendo sua Imagem e informações Pessoais
+  ----------------------------------------------------------------------------------------------------------*/
+-->
+ <div class="row">
+    <div class="col-md-12">
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h3 class="panel-title">IGOR FELIPE RODRIGUES DO VALLE</h3>
+            </div>
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-md-3 col-lg-3 " align="center"> <img alt="User Pic" src="img_admin/j146.png" class="img-circle img-responsive"> </div>
+
+                <div class=" col-md-9 col-lg-9 "> 
+                  <table class="table table-user-information">
+                    <tbody>
+                    <tr>
+                        <td><b>Inscrição da Academia:</b></td>
+                        <td>99.999.99999.99</td>
+                      </tr>
+                      <tr>
+                        <td><b>Endereço:</b></td>
+                        <td>Rua tenente capitão marris de barros 1370 - portão</td>
+                      </tr>
+                      <tr>
+                        <td><b>Data Nascimento:</b></td>
+                        <td>12/12/1994</td>
+                      </tr>
+                      <tr>
+                        <td><b>RG:</b></td>
+                        <td>40.656.080-8</td>
+                      </tr>
+                      <tr>
+                        <td><b>Email:</b></td>
+                        <td>igor.felipe.r.v@gmail.com</td>
+                      </tr>
+                        <tr>
+                        <td><b>Data Filiação:</b></td>
+                        <td>99/99/9999</td>
+                      </tr>
+                      <tr>
+                        <td><b>Estudante:</b></td>
+                        <td>Não</td>
+                      </tr>
+                     <tr>
+                        <td><b>Escola:</b></td>
+                        <td></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                </div>
+<!--
+/*------------------------------------------------------------------------------------------------------------
+  Botões de Adicões de Novos Itens
+  ----------------------------------------------------------------------------------------------------------*/
+-->
+                <br>
+                <div class="row">
+                <div class="btn-group btn-group-justified" role="group" style="padding-left:10px;padding-right:10px">
+                  <div class='btn btn-primary ' data-toggle="modal" data-target=".bs-example-modal-lg">Nova Graduação</div>
+                  <div class='btn btn-primary'  data-toggle="modal" data-target=".bs-novo-exame">Novo Exame Médico</div>
+                  <div class='btn btn-primary' data-toggle="modal" data-target=".bs-novo-pesagem">Nova Pesagem</div>
+                  <div class='btn btn-primary' data-toggle="modal" data-target=".bs-novo-curso">Novo Curso</div>
+                  <div class='btn btn-primary' data-toggle="modal" data-target=".bs-novo-competicao">Nova Competição</div>
+                  <div class='btn btn-primary' data-toggle="modal" data-target=".bs-novo-visita">Nova Visita Escolar</div>
+                </div>
+                  <br>
+                  <br>
+                </div>
+                <!--
+/*------------------------------------------------------------------------------------------------------------
+  Cards dos Itens sendo Apenas 3 por row
+  ----------------------------------------------------------------------------------------------------------*/
+-->
+                <div class="row">
+                    <div class='col-sm-4'>
+                        <div class="panel panel-danger ">
+                            <div class="panel-heading ">
+                                <h4 class='panel-title'>Graduação</h4>
+                            </div>
+                            <div class="panel-body">
+                                <table class="table">
+                                    <tr>
+                                    <td>Faixa(cor):</td>
+                                    <td>AMARELA</td>
+                                    </tr>
+                                    <td>Data da Graduação:</td>
+                                    <td>12/12/1994</td>
+                                    </tr>
+                                </table>
+                                <label>ATLETA PASSOU COM LOUVOR NA GRADUAÇÂO PARA FAIXA AMARELA</label>
+                            </div>
+                            <div class='panel-footer'>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='col-sm-4'>
+                        <div class="panel panel-success ">
+                            <div class="panel-heading ">
+                                <h4 class='panel-title'>Exame Médico</h4>
+                            </div>
+                            <div class="panel-body">
+                                <table class="table">
+                                    <tr>
+                                    <td>Tipo:</td>
+                                    <td>Muscular</td>
+                                    </tr>
+                                     <tr>
+                                    <td>Apto:</td>
+                                    <td>Sim</td>
+                                    </tr>
+                                    <tr>
+                                    <td>Data do Exame:</td>
+                                    <td>12/12/1994</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class='panel-footer'>
+                                <div class='btn btn-default'>Abrir Documento</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='col-sm-4'>
+                        <div class="panel panel-default ">
+                            <div class="panel-heading ">
+                                <h4 class='panel-title'>Pesagem</h4>
+                            </div>
+                            <div class="panel-body">
+                                <table class="table">
+                                    <tr>
+                                    <td>Peso:</td>
+                                    <td>27 KG</td>
+                                    </tr>
+                                     <tr>
+                                    <td>Categoria:</td>
+                                    <td>Adulto</td>
+                                    </tr>
+                                    <tr>
+                                    <td>Data da Pesagem:</td>
+                                    <td>12/12/1994</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class='panel-footer'>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              <div class="row">
+                  <div class='col-sm-4'>
+                        <div class="panel panel-default ">
+                            <div class="panel-heading ">
+                                <h4 class='panel-title'>Cursos</h4>
+                            </div>
+                            <div class="panel-body">
+                                <table class="table">
+                                    <tr>
+                                    <td>Tipo:</td>
+                                    <td>Instrução</td>
+                                    </tr>
+                                    <td>Data do curso:</td>
+                                    <td>12/12/1994</td>
+                                    </tr>
+                                </table>
+                                <label>TESTAMDO TESTÂO PARA COLOCARA NESSA PARTE DE HISTORCIO PARA FICAR DE COMENTARIO SAUHsuA SaUHsuAS SUAHUS AUUSaHUUHsAhsA SUAHsahsaHS AUSaHUUSuUSA SAUUs</label>
+                            </div>
+                            <div class='panel-footer'>
+                            </div>
+                        </div>
+                    </div>
+                  <div class='col-sm-4'>
+                        <div class="panel panel-default ">
+                            <div class="panel-heading ">
+                                <h4 class='panel-title'>Competição</h4>
+                            </div>
+                            <div class="panel-body">
+                                <table class="table">
+                                    <tr>
+                                    <td>NOME:</td>
+                                    <td>COMPETIÇÂO DE RESTRIÇÂO DE REGISTRO</td>
+                                    </tr>
+                                    <td>Modalidade:</td>
+                                    <td>DESCONHECIDA</td>
+                                    </tr>
+                                    <td>Classificação:</td>
+                                    <td>OURO</td>
+                                    </tr>
+                                    </tr>
+                                    <td>Data:</td>
+                                    <td>12/12/1994</td>
+                                    </tr>
+                                </table>
+                                <label>TESTAMDO TESTÂO PARA COLOCARA NESSA PARTE DE HISTORCIO PARA FICAR DE COMENTARIO SAUHsuA SaUHsuAS SUAHUS AUUSaHUUHsAhsA SUAHsahsaHS AUSaHUUSuUSA SAUUs</label>
+                            </div>
+                            <div class='panel-footer'>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='col-sm-4'>
+                        <div class="panel panel-default ">
+                            <div class="panel-heading ">
+                                <h4 class='panel-title'>Histórico Escolar</h4>
+                            </div>
+                            <div class="panel-body">
+                                <table class="table">
+                                    <tr>
+                                    <td>Data Visita:</td>
+                                    <td>12/12/1994</td>
+                                    </tr>
+                                    <tr>
+                                    <label>TESTAMDO TESTÂO PARA COLOCARA NESSA PARTE DE HISTORCIO PARA FICAR DE COMENTARIO SAUHsuA SaUHsuAS SUAHUS AUUSaHUUHsAhsA SUAHsahsaHS AUSaHUUSuUSA SAUUs</label>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class='panel-footer'>
+                            </div>
+                        </div>
+                    </div>
+              </div>
+            </div>
+                 <div class="panel-footer">
+                </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+</div>
+
+<!--
+/*------------------------------------------------------------------------------------------------------------
+  Models de Adição de Itens
+  ----------------------------------------------------------------------------------------------------------*/
+-->
+<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="exampleModalLabel">Nova Graduação</h4>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="recipient-name" class="control-label">Faixa:</label>
+            <select name="select" class="selectpicker form-control" >
+              <option value="0">BRANCA</option>
+              <option value="1">Cinza</option>
+              <option value="2">Azul Claro</option>
+              <option value="3">Azul Escuro</option>
+              <option value="4">Amarela</option>
+              <option value="5">Laranja</option>
+              <option value="6">Verde</option>
+              <option value="7">Roxa</option>
+              <option value="8">Marrom</option>
+              <option value="9">Preta</option>
+              <option value="10">Coral</option>
+              <option value="11">Vermelha</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="control-label">Data da Graduação:</label>
+            <input type="date"  class="form-control" placeholder="DD/MM/AAAA">
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="control-label">Message:</label>
+            <textarea class="form-control" id="message-text"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+        <button type="button" class="btn btn-primary">Adicionar Graduação</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade bs-novo-exame" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="exampleModalLabel">Novo Exame Médico</h4>
+      </div>
+      <div class="modal-body">
+        <form>
+        <div class="form-group">
+            <label for="message-text" class="control-label">Tipo de Exame:</label>
+            <input type="text"  class="form-control">
+          </div>
+          <div class="form-group">
+              <label>Atleta está Apto ?</label>
+              <label class="checkbox-inline">
+                  <input type="checkbox"/> Sim
+              </label>
+              <label class="checkbox-inline">
+                  <input type="checkbox"/> Não
+              </label>
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="control-label">Data do Exame:</label>
+            <input type="text"  class="form-control" placeholder="DD/MM/AAAA">
+          </div>
+          <div class="form-group">
+                              <label>Foto Do Exame:</label>
+                              <input type="file">
+                          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+        <button type="button" class="btn btn-primary">Adicionar Graduação</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade bs-novo-pesagem" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="exampleModalLabel">Nova Pesagem</h4>
+      </div>
+      <div class="modal-body">
+        <form>
+        <div class="form-group">
+            <label for="message-text" class="control-label">Novo Peso:</label>
+            <input type="text"  class="form-control" placehouder="100">
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="control-label">Data da Pesagem:</label>
+            <input type="text"  class="form-control" placeholder="DD/MM/AAAA">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+        <button type="button" class="btn btn-primary">Adicionar Pesagem</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade bs-novo-curso" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="exampleModalLabel">Novo Curso</h4>
+      </div>
+      <div class="modal-body">
+        <form>
+        <div class="form-group">
+            <label for="message-text" class="control-label">Tipo do Curso:</label>
+            <input type="text"  class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="control-label">Data do Curso:</label>
+            <input type="text"  class="form-control" placeholder="DD/MM/AAAA">
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="control-label">Comentário:</label>
+            <textarea class="form-control" id="message-text"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+        <button type="button" class="btn btn-primary">Adicionar Curso</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade bs-novo-competicao" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="exampleModalLabel">Nova Competição</h4>
+      </div>
+      <div class="modal-body">
+        <form>
+        <div class="form-group">
+            <label for="message-text" class="control-label">Nome da Competição:</label>
+            <input type="text"  class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="control-label">Modalidade:</label>
+            <input type="text"  class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="control-label">Classificação:</label>
+            <input type="text"  class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="control-label">Data da Competição:</label>
+            <input type="text"  class="form-control" placeholder="DD/MM/AAAA">
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="control-label">Comentário:</label>
+            <textarea class="form-control" id="message-text"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+        <button type="button" class="btn btn-primary">Adicionar Competição</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade bs-novo-visita" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="exampleModalLabel">Nova Visita Escolar</h4>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="message-text" class="control-label">Data da Visita:</label>
+            <input type="text"  class="form-control" placeholder="DD/MM/AAAA">
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="control-label">Comentário:</label>
+            <textarea class="form-control" id="message-text"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+        <button type="button" class="btn btn-primary">Adicionar Visita Escolar</button>
+      </div>
+    </div>
+  </div>
+</div>

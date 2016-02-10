@@ -1,0 +1,93 @@
+<div class="row">
+    <div class="col-md-12">
+     	<h2>Novo Atleta</h2>
+    </div>
+</div>
+<hr/>
+<div class="row" ng-controller="NovoAtletaCtrl">
+    <div class="col-md-12">
+        <!-- Form Elements -->
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                Formulário de Cadastro de Novos Atletas
+            </div>
+
+            <div class="panel-body">
+	            <form id="fomratleta" role="form" method="post" enctype="multipart/form-data" action="../server/teste.php">
+	                <div class="row">
+	                    <div class="col-md-6">
+	                        <h3>Informações Pessoais</h3>
+	                        
+                            <div class="form-group">
+                                <label>Nome:</label>
+                                <input class="form-control" ng-model="atleta.nome" placeholder="Ex: Pedro Augusto "/>
+                            </div>
+                            <div class="form-group">
+                                <label>Endereço:</label>
+                                <input class="form-control" ng-model="atleta.endereco" placeholder="Ex: Rua Alameda Algusta" />
+                            </div>
+                            <div class="form-group">
+                                <label>Data Nascimento:</label>
+                                <input class="form-control" ng-model="atleta.data_nas" placeholder="Ex: DD/DD/DDDD" />
+                            </div>
+               				<div class="form-group">
+                            	<label>RG:</label>
+                           		<input class="form-control" ng-model="atleta.rg" placeholder="Ex: 99.999.999-9"/>
+                        	</div>
+
+                        	<div class="form-group">
+                            	<label>Foto do Atleta:</label>
+                           		<input type="file" ngf-select="onFileSelect($file)"  class="form__file" id="imagem" name="imagem">
+                        </button>
+                        	</div>
+	                    </div>
+	             		<div class="col-md-6">
+	                     	<div class="form-group">
+                                <label>Email:</label>
+                                <input class="form-control" ng-model="atleta.email" placeholder="exemplo@exemplo.com.br" />
+                            </div>
+	                        <div class="form-group">
+	                            <label>Data Filiação:</label>
+	                            <input class="form-control" ng-model="atleta.filiacao" placeholder="Ex: DD/DD/DDDD" />
+	                        </div>
+	                       <div class="form-group">
+                                <label>Atleta é Estudante ?</label>
+                                <label class="checkbox-inline">
+                                    <input type="checkbox"/ ng-model="atleta.estudante_pos"> Sim
+                                </label>
+                                <label class="checkbox-inline">
+                                    <input type="checkbox"/ ng-model="atleta.estudante_neg"> Não
+                                </label>
+                            </div>
+                            <div class="form-group">
+                                <label for="disabledSelect">Escola</label>
+                                <input class="form-control" id="disabledInput"  ng-model="atleta.escola" type="text" placeholder="Ex: Carlos Albeto Vigneron" disabled />
+                            </div>
+                            <div class="form-group">
+                                <label for="disabledSelect">Ano</label>
+                                <input class="form-control" id="disabledInput" ng-model="atleta.ano" type="text" placeholder="Ex: 3" disabled />
+                            </div>
+                            <div class="form-group">
+                                <label>Possui incrição na academia ?</label>
+                                <label class="checkbox-inline">
+                                    <input type="checkbox" ng-model="atleta.inscricao_pos"> Sim
+                                </label>
+                                <label class="checkbox-inline">
+                                    <input type="checkbox" ng-model="atleta.inscricao_neg"> Não
+                                </label>
+                            </div>
+                            <div class="form-group">
+                                <label for="disabledSelect">Inscrição</label>
+                                <input class="form-control" id="disabledInput" ng-model="atleta.inscricao" type="text" placeholder="Ex: 100.00000.0000" disabled />
+                            </div>
+	                	</div>
+	                </div>
+	            </form>
+            </div>
+            <div>
+                <button class="btn btn-primary btn-block" ng-click="uploadFile(atleta)">Adicionar Atleta</button>
+            </div>
+        </div>
+    </div>
+</div>
+
